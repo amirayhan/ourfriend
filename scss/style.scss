@@ -1,0 +1,86 @@
+$body-bg:#333;
+$font-color:#fff;
+$primary-color:#008ed6; 
+$icon-font-size: 30px;
+
+body {
+	background: $body-bg;
+	color: $font-color;
+}
+.navbar {
+	border-bottom: 3px solid $primary-color;
+	background: #292b2c;
+	opacity: 0.8;
+}
+#home {
+	background: url('../img/home.jpg') no-repeat center top;
+	background-size: cover;
+	min-height: 700px;
+	background-attachment: fixed;
+
+	.color-overlay {
+		background: rgba(0,0,0,0.7);
+		min-height: 700px;
+	}
+	.fa {
+		background: #fff;
+		color: $primary-color;
+		font-size: $icon-font-size;
+		padding: 4px;
+		border-radius: 5px;
+	}
+
+	.card {
+		opacity: 0.7;
+	}
+	
+	.home-inner {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+}
+
+#explore-main {
+	.fa {
+		background: #333;
+		color: #fff;
+		font-size: $icon-font-size;
+		padding: 4px;
+		border-radius: 5px;
+	}
+}
+
+#create {
+	background: $primary-color;
+}
+
+#create-main {
+	.fa {
+		background: #fff;
+		color: $primary-color;
+		font-size: $icon-font-size;
+		padding: 4px;
+		border-radius: 5px;
+	}
+}
+#share {
+	background: $primary-color;
+}
+
+#share-head {
+	background: #fff;
+	
+	.fa {
+		background: #333;
+		color: #fff;
+		font-size: $icon-font-size;
+		padding: 4px;
+		border-radius: 5px;
+	}
+}
+
+@media(max-width: 768px){
+	#home h1 {
+		font-size: 36px;
+	}
+}
